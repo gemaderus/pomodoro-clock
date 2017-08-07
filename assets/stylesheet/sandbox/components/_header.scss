@@ -1,0 +1,43 @@
+/*
+
+Header
+------
+
+*/
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+
+  h2 {
+    font-size: 3.6vw;
+    margin-bottom: 0.4rem;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      font-size: 3vw;
+    }
+  }
+}
+
+.header-action-holder {
+  min-width: 13rem;
+}
+
+.header-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+
+  span {
+    font-size: 3.5vw;
+  }
+}

@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pommodoro clock</title>
+  <link rel="stylesheet" href="assets/css/sandbox.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Pommodoro clock</h1>
+    <header class="header">
+      <div class="header-action-holder">
+        <h2>Break Length</h2>
+        <div class="header-action">
+          <button class="btn" id="break-decrement">-</button>
+          <span id="break">5</span>
+          <button class="btn" id="break-increment">+</button>
+        </div>
+      </div>
+      <div class="header-action-holder">
+        <h2>Session length</h2>
+        <div class="header-action">
+          <button class="btn" id="session-decrement">-</button>
+          <div>
+            <span id="session">25</span>
+          </div>
+          <button class="btn" id="session-increment">+</button>
+        </div>
+      </div>
+    </header>
+    <div class="clock-holder">
+      <div class="clock-title">
+        <h3 id="clock-title">Session</h3>
+      </div>
+
+      <div class="clock">
+        <span id="time"></span>
+      </div>
+      <button class="btn btn-action" id="btn-action">
+        <span class="btn-start" id="start">Start</span>
+        <span class="btn-stop" id="stop">Stop</span>
+      </button>
+    </div>
+
+  </div>
+
+  <script src="assets/js/countdown.js"></script>
+
+</body>
+</html>

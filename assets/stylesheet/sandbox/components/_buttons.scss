@@ -1,0 +1,67 @@
+
+/*
+
+Buttons
+------
+
+Reset buttons styles.
+
+*/
+
+.btn {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 3.6vw;
+  line-height: 1rem;
+  padding: 1.4vw;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+  transition: 0.25s;
+  letter-spacing: 0.64px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  transition: 0.25s;
+  color: #808080;
+  background-color: #fff;
+  min-width: 40px;
+
+  &:active, &:hover {
+    background-color: darken(#fff, 10%);
+  }
+}
+
+.btn-action {
+  background-color: #F92F07;
+  padding: 2.6vw;
+  color: #fff;
+  font-size: 3vw;
+
+  &:hover, &:active {
+    background-color: darken(#F92F07, 5%);
+  }
+}
+
+.btn-start,
+.btn-stop {
+  vertical-align: middle;
+}
+
+.btn-stop {
+  display: none;
+}
+
+.is-clicked {
+  .btn-start {
+    display: none;
+  }
+
+  .btn-stop {
+    display: block;
+  }
+}
